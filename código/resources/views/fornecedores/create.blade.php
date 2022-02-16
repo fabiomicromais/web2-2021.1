@@ -10,12 +10,12 @@
 @if (Request::is('*/edit'))
 <section class="content_container">
   <div class="content_header">
-    <a href="{{ url('fornecedores/index')}}" class="btn_back">
+    <a href="{{ route('fornecedores/.index')}}" class="btn_back">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255);transform: ;msFilter:;"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
     </a>
     <h1>Edite os dados do fornecedor</h1>
   </div>
-    <form action="{{ url("fornecedores/$fornecedor->id/update") }}" class="form_create" method="POST">
+    <form action="{{ route("fornecedores.update") }}" class="form_create" method="POST">
       @csrf
       @method('PUT')
       <div class="form_item">
@@ -53,10 +53,10 @@
 
 <section class="content_container">
   <div class="content_header">
-    <a href="{{ url('fornecedores/index')}}" class="btn_back"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255);transform: ;msFilter:;"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg></a>
+    <a href="{{ route('fornecedores.index')}}" class="btn_back"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255);transform: ;msFilter:;"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg></a>
       <h1>Realize o cadastro do fornecedor</h1>
   </div>
-      <form action="{{ url('fornecedores/add') }}" class="form_create" method="POST">
+      <form action="{{ route('fornecedores.add') }}" class="form_create" method="POST">
         @csrf
         <div class="form_item">
           <label for="nome">Nome</label>

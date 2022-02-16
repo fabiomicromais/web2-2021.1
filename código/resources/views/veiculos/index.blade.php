@@ -11,7 +11,7 @@
         <h5>Veja os veiculos cadastrados abaixo:</h5>
       </div>
       <div>
-        <a href="{{ url('veiculos/create') }}" class="btn_form_create">
+        <a href="{{ route('veiculos.create') }}" class="btn_form_create">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
             style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
             <path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path>
@@ -45,7 +45,7 @@
           <td>{{$veiculo->numeroPlaca}}</td>
           <td>
             <div class="container_table_buttons">
-              <a href="{{url("veiculos/$veiculos->id/edit")}}">
+              <a href="{{route("veiculos.edit")}}">
                 <button type="button" class="btn_table_edit">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"
                     style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
@@ -56,7 +56,7 @@
                   <span>Alterar</span>
                 </button>
               </a>
-              <form action="{{url("veiculos/$veiculos->id/delete")}}" method="post">
+              <form action="{{route("veiculos.delete")}}" method="post">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn_table_delete">

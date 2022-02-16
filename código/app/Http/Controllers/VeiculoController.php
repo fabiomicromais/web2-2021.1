@@ -17,7 +17,7 @@ class VeiculoController extends Controller
         return view('veiculos.create');
     }
 
-    public function add(VeiculoRequest $request) [
+    public function add(VeiculoRequest $request){
         
-    ]
+    }
 }

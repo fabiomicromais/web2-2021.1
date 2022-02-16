@@ -22,34 +22,38 @@ Route::get('/', function () {
 });
 
 
-// Clientes
-Route::get('clientes/index', [ClienteController::class, 'index']);
-Route::get('clientes/create', [ClienteController::class, 'create']);
-Route::post('clientes/add', [ClienteController::class, 'add']);
-Route::get('clientes/{id}/edit', [ClienteController::class, 'edit']);
-Route::put('clientes/{id}/update', [ClienteController::class, 'update']);
-Route::delete('clientes/{id}/delete', [ClienteController::class, 'delete']);
+Route::prefix('clientes')->group(function () {
+    Route::get('/index', [ClienteController::class, 'index'])->name('clientes.index');
+    Route::get('/create', [ClienteController::class, 'create'])->name('clientes.create');
+    Route::post('/add', [ClienteController::class, 'add'])->name('clientes.add');
+    Route::get('/{id}/edit', [ClienteController::class, 'edit'])->name('clientes.edit');
+    Route::put('/{id}/update', [ClienteController::class, 'update'])->name('clientes.update');
+    Route::delete('/{id}/delete', [ClienteController::class, 'delete'])->name('clientes.delete');
+});
 
-// Funcionários
-Route::get('funcionarios/index', [FuncionarioController::class, 'index']);
-Route::get('funcionarios/create', [FuncionarioController::class, 'create']);
-Route::post('funcionarios/add', [FuncionarioController::class, 'add']);
-Route::get('funcionarios/{id}/edit', [FuncionarioController::class, 'edit']);
-Route::put('funcionarios/{id}/update', [FuncionarioController::class, 'update']);
-Route::delete('funcionarios/{id}/delete', [FuncionarioController::class, 'delete']);
+Route::prefix('funcionarios')->group(function () { 
+    Route::get('/index', [FuncionarioController::class, 'index'])->name('funcionarios.index');
+    Route::get('create', [FuncionarioController::class, 'create'])->name('funcionarios.create');
+    Route::post('/add', [FuncionarioController::class, 'add'])->name('funcionarios.add');
+    Route::get('/{id}/edit', [FuncionarioController::class, 'edit'])->name('funcionarios.edit');
+    Route::put('/{id}/update', [FuncionarioController::class, 'update'])->name('funcionarios.update');
+    Route::delete('/{id}/delete', [FuncionarioController::class, 'delete'])->name('funcionarios.delete');
+});
 
-// Fornecedores
-Route::get('fornecedores/index', [FornecedorController::class, 'index']);
-Route::get('fornecedores/create', [FornecedorController::class, 'create']);
-Route::post('fornecedores/add', [FornecedorController::class, 'add']);
-Route::get('fornecedores/{id}/edit', [FornecedorController::class, 'edit']);
-Route::put('fornecedores/{id}/update', [FornecedorController::class, 'update']);
-Route::delete('fornecedores/{id}/delete', [FornecedorController::class, 'delete']);
+Route::prefix('fornecedores')->group(function () {
+    Route::get('/index', [FornecedorController::class, 'index'])->name('fornecedores.index');
+    Route::get('/create', [FornecedorController::class, 'create'])->name('fornecedores.create');
+    Route::post('/add', [FornecedorController::class, 'add'])->name('fornecedores.add');
+    Route::get('/{id}/edit', [FornecedorController::class, 'edit'])->name('fornecedores.edit');
+    Route::put('/{id}/update', [FornecedorController::class, 'update'])->name('fornecedores.update');
+    Route::delete('/{id}/delete', [FornecedorController::class, 'delete'])->name('fornecedores.delete');
+});
 
-// Veículos
-Route::get('veiculos/index', [VeiculoController::class, 'index']);
-Route::get('veiculos/create', [VeiculoController::class, 'create']);
-Route::post('veiculos/add', [VeiculoController::class, 'add']);
-// Route::get('veiculos/{id}/edit', [VeiculoController::class, 'edit']);
-// Route::put('veiculos/{id}/update', [VeiculoController::class, 'update']);
-// Route::delete('veiculos/{id}/delete', [VeiculoController::class, 'delete']);
+Route::prefix('veiculos')->group(function () {
+    Route::get('/index', [VeiculoController::class, 'index'])->name('veiculos.index');
+    Route::get('/create', [VeiculoController::class, 'create'])->name('veiculos.create');
+    Route::post('/add', [VeiculoController::class, 'add'])->name('veiculos.add');
+    // Route::get('/{id}/edit', [VeiculoController::class, 'edit'])->name('veiculos.edit');
+    // Route::put('/{id}/update', [VeiculoController::class, 'update'])->name('veiculos.update');
+    // Route::delete('/{id}/delete', [VeiculoController::class, 'delete'])->name('veiculos.delete');
+});

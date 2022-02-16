@@ -11,7 +11,7 @@
 @if(Request::is('*/edit'))
 <section class="content_container">
   <div class="content_header">
-    <a href="{{ url('produtos/index')}}" class="btn_back">
+    <a href="{{ route('veiculos.index')}}" class="btn_back">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
         style="fill: rgba(255, 255, 255);transform: ;msFilter:;">
         <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path>
@@ -19,7 +19,7 @@
     </a>
     <h1>Edite dos dados do veículo</h1>
   </div>
-  <form action="{{ url("produtos/$produto->id/update") }}" class="form_create" method="POST">
+  <form action="{{ route("veiculos.update") }}" class="form_create" method="POST">
     @csrf
     @method('PUT')
     <div class="form_item">
@@ -62,7 +62,7 @@
 
 <section class="content_container">
   <div class="content_header">
-    <a href="{{ url('produtos/index')}}" class="btn_back">
+    <a href="{{ route('veiculos.index')}}" class="btn_back">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
         style="fill: rgba(255, 255, 255);transform: ;msFilter:;">
         <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path>
@@ -70,7 +70,7 @@
     </a>
     <h1>Realize o cadastro do Veículo</h1>
   </div>
-  <form action="{{ url('produtos/add') }}" class="form_create" method="POST" enctype="multipart/form-data">
+  <form action="{{ route('veiculos.add') }}" class="form_create" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form_item">
       <div class="form_image_item">

@@ -8,12 +8,7 @@
     <title>Carsystem - @yield('title')</title>
 
     {{-- import CSS --}}
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
-
-    {{-- import boxicons --}}
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-
+    <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/style.css') }}">
 </head>
 
 <body>

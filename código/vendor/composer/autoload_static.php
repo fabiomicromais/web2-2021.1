@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita880e616789d768d653fe3a995790530
+class ComposerStaticInit5a3910bdcbd94762fc16e0637094ad51
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -126,7 +126,6 @@ class ComposerStaticInita880e616789d768d653fe3a995790530
             'Laravel\\SerializableClosure\\' => 28,
             'Laravel\\Sanctum\\' => 16,
             'Laravel\\Sail\\' => 13,
-            'LaravelLegends\\PtBrValidator\\' => 29,
         ),
         'I' => 
         array (
@@ -403,10 +402,6 @@ class ComposerStaticInita880e616789d768d653fe3a995790530
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
-        'LaravelLegends\\PtBrValidator\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator',
-        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
@@ -527,7 +522,8 @@ class ComposerStaticInita880e616789d768d653fe3a995790530
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\FornecedorController' => __DIR__ . '/../..' . '/app/Http/Controllers/FornecedorController.php',
         'App\\Http\\Controllers\\FuncionarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/FuncionarioController.php',
-        'App\\Http\\Controllers\\ProdutoController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProdutoController.php',
+        'App\\Http\\Controllers\\VeiculoController' => __DIR__ . '/../..' . '/app/Http/Controllers/VeiculoController.php',
+        'App\\Http\\Controllers\\VendaController' => __DIR__ . '/../..' . '/app/Http/Controllers/VendaController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -540,11 +536,14 @@ class ComposerStaticInita880e616789d768d653fe3a995790530
         'App\\Http\\Requests\\ClienteRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ClienteRequest.php',
         'App\\Http\\Requests\\FornecedorRequest' => __DIR__ . '/../..' . '/app/Http/Requests/FornecedorRequest.php',
         'App\\Http\\Requests\\FuncionarioRequest' => __DIR__ . '/../..' . '/app/Http/Requests/FuncionarioRequest.php',
+        'App\\Http\\Requests\\VeiculoRequest' => __DIR__ . '/../..' . '/app/Http/Requests/VeiculoRequest.php',
+        'App\\Http\\Requests\\VendaRequest' => __DIR__ . '/../..' . '/app/Http/Requests/VendaRequest.php',
         'App\\Models\\ClienteModel' => __DIR__ . '/../..' . '/app/Models/ClienteModel.php',
         'App\\Models\\FornecedorModel' => __DIR__ . '/../..' . '/app/Models/FornecedorModel.php',
         'App\\Models\\FuncionarioModel' => __DIR__ . '/../..' . '/app/Models/FuncionarioModel.php',
-        'App\\Models\\ProdutoModel' => __DIR__ . '/../..' . '/app/Models/ProdutoModel.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\VeiculoModel' => __DIR__ . '/../..' . '/app/Models/VeiculoModel.php',
+        'App\\Models\\VendaModel' => __DIR__ . '/../..' . '/app/Models/VendaModel.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -2674,25 +2673,6 @@ class ComposerStaticInita880e616789d768d653fe3a995790530
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\Celular' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Celular.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\CelularComCodigo' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/CelularComCodigo.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\CelularComDdd' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/CelularComDdd.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\Cnh' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Cnh.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\Cnpj' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Cnpj.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\Cpf' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Cpf.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\CpfOuCnpj' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/CpfOuCnpj.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\FormatoCep' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoCep.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\FormatoCnpj' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoCnpj.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\FormatoCpf' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoCpf.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\FormatoCpfOuCnpj' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoCpfOuCnpj.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\FormatoPis' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoPis.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\FormatoPlacaDeVeiculo' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoPlacaDeVeiculo.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\Pis' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Pis.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\Telefone' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Telefone.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\TelefoneComCodigo' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/TelefoneComCodigo.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\TelefoneComDdd' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/TelefoneComDdd.php',
-        'LaravelLegends\\PtBrValidator\\Rules\\Uf' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Uf.php',
-        'LaravelLegends\\PtBrValidator\\ValidatorProvider' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/ValidatorProvider.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/PublishCommand.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',
@@ -5567,10 +5547,10 @@ class ComposerStaticInita880e616789d768d653fe3a995790530
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita880e616789d768d653fe3a995790530::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita880e616789d768d653fe3a995790530::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInita880e616789d768d653fe3a995790530::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInita880e616789d768d653fe3a995790530::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5a3910bdcbd94762fc16e0637094ad51::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5a3910bdcbd94762fc16e0637094ad51::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit5a3910bdcbd94762fc16e0637094ad51::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit5a3910bdcbd94762fc16e0637094ad51::$classMap;
 
         }, null, ClassLoader::class);
     }
